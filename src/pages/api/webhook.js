@@ -32,6 +32,7 @@ const fulfillOrder = async (session) => {
       console.log(`SUCCESS: order ${session.id} had been added to the db`);
     });
 };
+
 export default async (req, res) => {
   if (req.method === "POST") {
     const requestBuffer = await buffer(req);
